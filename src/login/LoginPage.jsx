@@ -249,7 +249,7 @@ const LoginPage = (props) => {
             id="sign-in"
             type="submit"
             variant="brand"
-            className="login-button-width"
+            className="login-button-width btn-primary"
             state={submitState}
             labels={{
               default: formatMessage(messages['sign.in.button']),
