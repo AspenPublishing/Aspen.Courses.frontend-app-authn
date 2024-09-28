@@ -23,7 +23,7 @@ const LargeLayout = () => {
           <span className="text-light-500">
             {formatMessage(messages['your.career.turning.point'])}
           </span>
-          <span className="text-warning-300" style={{ color: '#ca9b5f' }}>
+          <span className="text-warning-300" style={{ color: '#ca9b5f !important' }}>
             {formatMessage(messages['is.here'])}
           </span>
         </h1>
