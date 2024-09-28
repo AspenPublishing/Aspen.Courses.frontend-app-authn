@@ -22,7 +22,7 @@ const ExtraSmallLayout = () => {
           <span className="text-light-500">
             {formatMessage(messages['your.career.turning.point'])}{' '}
           </span>
-          <span className="text-warning-300">
+          <span className="text-warning-300" style={{ color: '#ca9b5f' }}>
             {formatMessage(messages['is.here'])}
           </span>
         </h1>
