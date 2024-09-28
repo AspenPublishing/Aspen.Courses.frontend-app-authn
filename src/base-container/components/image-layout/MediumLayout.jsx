@@ -23,7 +23,7 @@ const MediumLayout = () => {
           <span className="text-light-500">
             {formatMessage(messages['your.career.turning.point'])}{' '}
           </span>
-          <span className="text-warning-300 d-inline-block" style={{ color: '#ca9b5f !important' }}>
+          <span className="d-inline-block" style={{ color: '#ca9b5f' }}>
             {formatMessage(messages['is.here'])}
           </span>
         </h1>
