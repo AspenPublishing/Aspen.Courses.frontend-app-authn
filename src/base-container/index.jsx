@@ -7,9 +7,7 @@ import PropTypes from 'prop-types';
 import MediaQuery from 'react-responsive';
 
 import { DefaultLargeLayout, DefaultMediumLayout, DefaultSmallLayout } from './components/default-layout';
-import {
-  ImageExtraSmallLayout, ImageLargeLayout, ImageMediumLayout, ImageSmallLayout,
-} from './components/image-layout';
+
 import { AuthLargeLayout, AuthMediumLayout, AuthSmallLayout } from './components/welcome-page-layout';
 
 const BaseContainer = ({ children, showWelcomeBanner, fullName }) => {
@@ -42,13 +40,13 @@ const BaseContainer = ({ children, showWelcomeBanner, fullName }) => {
       <div className="col-md-12 extra-large-screen-top-stripe" />
       <div className="layout">
         <MediaQuery maxWidth={breakpoints.small.maxWidth - 1}>
-          {showWelcomeBanner ? <AuthSmallLayout fullName={fullName} /> : <DefaultSmallLayout />}
+          { <AuthSmallLayout fullName={fullName} /> }
         </MediaQuery>
         <MediaQuery minWidth={breakpoints.medium.minWidth} maxWidth={breakpoints.large.maxWidth - 1}>
-          {showWelcomeBanner ? <AuthMediumLayout fullName={fullName} /> : <DefaultMediumLayout />}
+          { <AuthMediumLayout fullName={fullName} /> }
         </MediaQuery>
         <MediaQuery minWidth={breakpoints.extraLarge.minWidth}>
-          {showWelcomeBanner ? <AuthLargeLayout fullName={fullName} /> : <DefaultLargeLayout />}
+          { <AuthLargeLayout fullName={fullName} /> }
         </MediaQuery>
         <div className={classNames('content', { 'align-items-center mt-0': showWelcomeBanner })}>
           {children}
