@@ -19,16 +19,16 @@ const BaseContainer = ({ children, showWelcomeBanner, fullName }) => {
     return (
       <div className="layout">
         <MediaQuery maxWidth={breakpoints.extraSmall.maxWidth - 1}>
-          {showWelcomeBanner ? <AuthSmallLayout fullName={fullName} /> : <ImageExtraSmallLayout />}
+          { <AuthSmallLayout fullName={fullName} /> }
         </MediaQuery>
         <MediaQuery minWidth={breakpoints.small.minWidth} maxWidth={breakpoints.small.maxWidth - 1}>
-          {showWelcomeBanner ? <AuthSmallLayout fullName={fullName} /> : <ImageSmallLayout />}
+          { <AuthSmallLayout fullName={fullName} /> }
         </MediaQuery>
         <MediaQuery minWidth={breakpoints.medium.minWidth} maxWidth={breakpoints.large.maxWidth - 1}>
-          {showWelcomeBanner ? <AuthMediumLayout fullName={fullName} /> : <ImageMediumLayout />}
+          { <AuthMediumLayout fullName={fullName} /> }
         </MediaQuery>
         <MediaQuery minWidth={breakpoints.extraLarge.minWidth}>
-          {showWelcomeBanner ? <AuthLargeLayout fullName={fullName} /> : <ImageLargeLayout />}
+          { <AuthLargeLayout fullName={fullName} /> }
         </MediaQuery>
         <div className={classNames('content', { 'align-items-center mt-0': showWelcomeBanner })}>
           {children}
