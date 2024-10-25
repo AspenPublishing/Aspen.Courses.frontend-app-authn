@@ -5,6 +5,7 @@ import { breakpoints } from '@openedx/paragon';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import MediaQuery from 'react-responsive';
+import Footer from './components/footer/Footer';
 
 import { AuthLargeLayout, AuthMediumLayout, AuthSmallLayout } from './components/welcome-page-layout';
 
@@ -29,6 +30,7 @@ const BaseContainer = ({ children, showWelcomeBanner, fullName }) => {
         <div className={classNames('content', { 'align-items-center mt-0': showWelcomeBanner })}>
           {children}
         </div>
+        <Footer />
       </div>
     );
   }
@@ -49,6 +51,7 @@ const BaseContainer = ({ children, showWelcomeBanner, fullName }) => {
         <div className={classNames('content', { 'align-items-center mt-0': showWelcomeBanner })}>
           {children}
         </div>
+        <Footer />
       </div>
     </>
   );
