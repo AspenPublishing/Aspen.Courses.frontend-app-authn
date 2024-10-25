@@ -4,6 +4,7 @@ import { getConfig } from '@edx/frontend-platform';
 import { useIntl } from '@edx/frontend-platform/i18n';
 import { Hyperlink, Image } from '@openedx/paragon';
 import PropTypes from 'prop-types';
+import './Header.css';
 
 import messages from './messages';
 
@@ -11,13 +12,16 @@ const LargeLayout = ({ fullName }) => {
   const { formatMessage } = useIntl();
 
   return (
-    <div className="w-50 d-flex">
-      <div className="col-md-10 p-0">
-        <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
-          <Image className="logo position-absolute" alt={getConfig().SITE_NAME} src={getConfig().LOGO_WHITE_URL} />
-        </Hyperlink>
+    <header className="header" role="banner" aria-labelledby="header-heading">
+      <h2 id="header-heading" className="sr-only">Aspen Publishing Header</h2>
+      <div className="header-container">
+        <div className="header-logo">
+          <a href={getConfig().MARKETING_SITE_BASE_URL} className="header-logo-link" aria-label="Aspen Publishing Homepage">
+            <img src={getConfig().LOGO_WHITE_URL} alt={getConfig().SITE_NAME} className="header-logo-img" />
+          </a>
+        </div>
       </div>
-    </div>
+    </header>
   );
 };
 
