@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import { getConfig } from '@edx/frontend-platform';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,7 +10,7 @@ const Footer = () => {
       <h2 id="footer-heading" className="sr-only">Footer</h2>
       <div className="footer-container">
         <div className="footer-logo">
-          <img src="/images/logo.svg" alt="Aspen Publishing Logo" className="footer-logo-img" />
+          <img src={getConfig().LOGO_URL} alt="Aspen Publishing Logo" className="footer-logo-img" />
         </div>
 
         <div className="footer-links">
