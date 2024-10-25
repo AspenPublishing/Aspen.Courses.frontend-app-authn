@@ -15,7 +15,7 @@ const ExtraSmallLayout = () => {
       style={{ backgroundImage: `url(${getConfig().BANNER_IMAGE_EXTRA_SMALL})` }}
     >
       <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
-        <Image className="company-logo" alt={getConfig().SITE_NAME} src={getConfig().LOGO_WHITE_URL} />
+        <Image className="company-logo" alt={getConfig().SITE_NAME} src={getConfig().LOGO_URL} />
       </Hyperlink>
       <div className="ml-4.5 mr-1 pb-3.5 pt-3.5">
         <h1 className="banner__heading">
