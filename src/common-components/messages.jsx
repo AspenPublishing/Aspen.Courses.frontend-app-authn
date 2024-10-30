@@ -10,7 +10,7 @@ const messages = defineMessages({
   // logistration strings
   'logistration.sign.in': {
     id: 'logistration.sign.in',
-    defaultMessage: 'Sign in',
+    defaultMessage: 'Login',
     description: 'Text that appears on the tab to switch between login and register',
   },
   'logistration.register': {
