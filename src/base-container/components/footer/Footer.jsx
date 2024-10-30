@@ -8,30 +8,30 @@ const Footer = () => {
   return (
     <footer className="relative w-full bg-181818 py-8" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">Footer</h2>
-      <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start py-8 px-6 lg:px-0">
+      <div className="mx-auto flex flex-col lg:flex-row justify-between items-start py-8 px-6 lg:px-0">
         <div className="flex flex-col mb-8 lg:mb-0">
           <img src={getConfig().LOGO_URL} alt="Aspen Publishing Logo" className="w-40 h-auto mb-4" />
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
           <div className="flex flex-col gap-4 text-white">
-            <h3 className="uppercase text-lg font-medium">
+            <h3 className="uppercase footer-link">
               <a href="https://aspenpublishing.com/pages/discover-jd-next-program" target="_blank" rel="noopener" aria-label="About Us">About Us</a>
             </h3>
-            <h3 className="uppercase text-lg font-medium">
+            <h3 className="uppercase footer-link">
               <a href="https://support.aspenpublishing.com/hc/en-us/categories/19204583377428-JD-Next" target="_blank" rel="noopener" aria-label="Support">Support</a>
             </h3>
           </div>
           <div className="flex flex-col gap-4 text-gray-300">
-            <a href="/tos" className="text-sm">Terms of Service</a>
-            <a href="/privacy" className="text-sm">Privacy Policy</a>
-            <a href="/disclosure" className="text-sm">California Consumer Act Policy</a>
-            <a href="/agreement" className="text-sm">End User License Agreement</a>
+            <a href="/tos" className="footer-link-extra">Terms of Service</a>
+            <a href="/privacy" className="footer-link-extra">Privacy Policy</a>
+            <a href="/disclosure" className="footer-link-extra">California Consumer Act Policy</a>
+            <a href="/agreement" className="footer-link-extra">End User License Agreement</a>
           </div>
         </div>
       </div>
       <hr className="my-8 border-t border-d6ae75 mx-6 lg:mx-24" aria-hidden="true" />
-      <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center px-6 lg:px-0 py-8">
+      <div className="mx-auto flex flex-col lg:flex-row justify-between items-center px-6 lg:px-0 py-8">
         <span className="text-gray-300 text-sm mb-4 lg:mb-0">&copy; {currentYear} ASPEN PUBLISHING</span>
         <div className="flex gap-4 lg:gap-8">
           <a href="https://www.facebook.com/profile.php?id=61555997104704" className="text-gray-300 text-sm">Facebook</a>
