@@ -132,7 +132,7 @@ const Logistration = (props) => {
                 </div>
               </div>
               <div className='contact-us-wrapper'>
-                <p>Having trouble? <a href="#">Contact us</a></p>
+                <p>Having trouble? <a className="contact-us-link" href="#">Contact us</a></p>
               </div>
             </>
           )

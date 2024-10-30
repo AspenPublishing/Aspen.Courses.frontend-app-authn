@@ -70,6 +70,10 @@ $elevation-level-2-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
   }
 }
 
+.main-content h3 {
+  font-size: 1.975rem;
+}
+
 .welcome-page-content {
   min-width: 464px !important;
 }
@@ -118,7 +122,9 @@ $elevation-level-2-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
   font-size: 0.875rem;
   line-height: 1.5;
   height: 2.75rem;
-
+  border-radius: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .btn-social {
@@ -501,6 +507,9 @@ select.form-control {
   background-color: #FAA422;
   border-color: #FAA422;
   width: 100%;
+  padding: 21px 35px 21px 35px;
+  gap: 20px;
+  border-radius: 10px;
 }
 
 .btn-register {
@@ -508,9 +517,18 @@ select.form-control {
   border-color: #181818;
   color: #181818;
   width: 100%;
+  padding: 21px 35px 21px 35px;
+  gap: 20px;
+  border-radius: 10px;
 }
 
 .contact-us-wrapper {
   display: flex;
   justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.contact-us-link {
+  color: #086CD9;
+  text-decoration: none;
 }
