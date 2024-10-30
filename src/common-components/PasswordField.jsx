@@ -99,7 +99,11 @@ const PasswordField = (props) => {
   );
 
   const ShowPasswordLink = (
-    <span onClick={setHiddenFalse}>Show</span>
+    <a href="#" className="show-password-link" onClick={(e) => { e.preventDefault(); setHiddenFalse(); }}>Show</a>
+  );
+
+  const HidePasswordLink = (
+    <a href="#" className="hide-password-link" onClick={(e) => { e.preventDefault(); setHiddenTrue(); }}>Hide</a>
   );
 
   const placement = window.innerWidth < 768 ? 'top' : 'left';
@@ -135,7 +139,7 @@ const PasswordField = (props) => {
           onBlur={handleBlur}
           onChange={props.handleChange}
           controlClassName={props.borderClass}
-          trailingElement={isPasswordHidden ? ShowPasswordLink : HideButton}
+          trailingElement={isPasswordHidden ? ShowButton : HideButton}
           floatingLabel={props.floatingLabel}
         />
       </OverlayTrigger>

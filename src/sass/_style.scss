@@ -528,6 +528,8 @@ select.form-control {
 
 .pgn__form-control-decorator-trailing {
   right: 0 !important;
+  padding-right: 15px;
+  padding-top: 5px;
 }
 
 .header-container {
@@ -552,6 +554,8 @@ select.form-control {
   border-radius: 10px;
   margin-top: 25px;
   margin-bottom: 25px;
+  min-width: 464px;
+  max-width: 464px;
 }
 
 .btn-login:hover {
@@ -645,4 +649,14 @@ span.separator-or {
   font-weight: 420;
   line-height: 25.74px;
   text-align: left;
+}
+
+.show-password-link {
+  color: #086CD9 !important;
+  text-decoration: none !important;
+}
+
+.hide-password-link {
+  color: #086CD9 !important;
+  text-decoration: none !important;
 }
