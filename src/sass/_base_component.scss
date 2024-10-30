@@ -17,8 +17,10 @@
   @include media-breakpoint-up('xl') {
     display: flex;
     justify-content: center;
-    margin-top: 4rem;
+    padding-top: 4rem;
   }
+  background-color: #FAA42214;
+
 }
 
 .logo-small {
