@@ -234,6 +234,7 @@ const LoginPage = (props) => {
             errorMessage={errors.emailOrUsername}
             trailingElement={<svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 7.49976H27C29.4852 7.49976 31.5 9.51448 31.5 11.9998V25.4997C31.5 27.9851 29.4852 29.9997 27 29.9997H7.5C5.01472 29.9997 3 27.9851 3 25.4997V11.9998C3 9.51446 5.01471 7.49976 7.5 7.49976ZM7.5 8.99976C6.76758 8.99976 6.09645 9.26223 5.57556 9.69823L17.25 17.2797L28.9243 9.69823C28.4035 9.26223 27.7324 8.99976 27 8.99976H7.5ZM17.25 19.0682L4.7007 10.9186C4.57107 11.254 4.5 11.6186 4.5 11.9998V25.4997C4.5 27.1566 5.84314 28.4997 7.5 28.4997H27C28.6569 28.4997 30 27.1566 30 25.4997V11.9998C30 11.6186 29.9289 11.254 29.7993 10.9186L17.25 19.0682Z" fill="#6C6461"/></svg>}
           />
+          <Form.Label>Password</Form.Label>
           <PasswordField
             name="password"
             value={formFields.password}
@@ -243,7 +244,6 @@ const LoginPage = (props) => {
             handleChange={handleOnChange}
             handleFocus={handleOnFocus}
             errorMessage={errors.password}
-            floatingLabel={formatMessage(messages['login.password.label'])}
           />
           <Link
             id="forgot-password"
