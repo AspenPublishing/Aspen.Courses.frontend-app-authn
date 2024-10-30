@@ -41,7 +41,7 @@ $elevation-level-2-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
 
 .main-content {
   @extend .pt-4;
-  width: 642px;
+  width: 582px;
   min-height: 32rem;
   background-color: #FFF;
   border: 1px solid #EFF0F7;
@@ -561,4 +561,24 @@ select.form-control {
 .contact-us-link {
   color: #086CD9 !important;
   text-decoration: none !important;
+}
+
+.forgot-password-link {
+  float: right;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3428572118282318px;
+  text-align: right;
+  color: #086CD9 !important;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.login-form-label {
+  font-size: 16px;
+  font-weight: 420;
+  line-height: 24px;
+  letter-spacing: 0.3428572118282318px;
+  text-align: left;
 }
