@@ -12,9 +12,9 @@ const SmallLayout = ({ fullName }) => {
   const { formatMessage } = useIntl();
 
   return (
-    <header className="header" role="banner" aria-labelledby="header-heading">
+    <header className="container mx-auto items-start py-8 px-6 lg:px-0" role="banner" aria-labelledby="header-heading">
       <h2 id="header-heading" className="sr-only">Aspen Publishing Header</h2>
-      <div className="header-container">
+      <div className="">
         <div className="header-logo">
           <a href={getConfig().MARKETING_SITE_BASE_URL} className="header-logo-link" aria-label="Aspen Publishing Homepage">
             <img src={getConfig().LOGO_WHITE_URL} alt={getConfig().SITE_NAME} className="header-logo-img" />
