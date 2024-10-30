@@ -27,6 +27,11 @@ const messages = defineMessages({
     defaultMessage: 'Forgot password',
     description: 'Button text for forgot password',
   },
+  'create.account.button': {
+    id: 'create.account.button',
+    defaultMessage: 'CREATE AN ACCOUNT',
+    description: 'Button text for create an account',
+  },
   'institution.login.button': {
     id: 'institution.login.button',
     defaultMessage: 'Institution/campus credentials',

@@ -279,7 +279,7 @@ const LoginPage = (props) => {
             target="_blank"
             onClick={trackForgotPasswordLinkClick}
           >
-            {formatMessage(messages['forgot.password'])}
+            {formatMessage(messages['create.account.button'])}
           </Link>
           <ThirdPartyAuth
             currentProvider={currentProvider}
