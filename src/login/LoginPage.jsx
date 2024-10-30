@@ -245,6 +245,7 @@ const LoginPage = (props) => {
             handleFocus={handleOnFocus}
             errorMessage={errors.password}
           />
+          <Form.Checkbox>Remember me on this device</Form.Checkbox>
           <Link
             id="forgot-password"
             name="forgot-password"
