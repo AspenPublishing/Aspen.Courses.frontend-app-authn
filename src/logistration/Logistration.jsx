@@ -126,7 +126,7 @@ const Logistration = (props) => {
                     </g>
                   </svg>
                   {!institutionLogin && (
-                    <h3 className="mb-4.5">{formatMessage(messages['logistration.sign.in'])}</h3>
+                    <h3 className="mb-4.5 login-page-heading">{formatMessage(messages['logistration.sign.in'])}</h3>
                   )}
                   <LoginPage institutionLogin={institutionLogin} handleInstitutionLogin={handleInstitutionLogin} />
                 </div>

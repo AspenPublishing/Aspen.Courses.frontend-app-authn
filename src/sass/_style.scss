@@ -51,7 +51,7 @@ $elevation-level-2-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  padding: 2rem 3rem;
   // Responsive styles
   @media (max-width: 767px) {
     width: 100%;
@@ -581,4 +581,32 @@ select.form-control {
   line-height: 24px;
   letter-spacing: 0.3428572118282318px;
   text-align: left;
+}
+
+span.separator-or {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 1.5rem 0;
+  
+  &:before,
+  &:after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #E0E1E4;
+  }
+  
+  &:before {
+    margin-right: 1rem;
+  }
+  
+  &:after {
+    margin-left: 1rem;
+  }
+}
+
+.login-page-heading {
+  width: 100%;
+  max-width: 464px !important;
 }

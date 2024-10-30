@@ -270,7 +270,7 @@ const LoginPage = (props) => {
             onClick={handleSubmit}
             onMouseDown={(event) => event.preventDefault()}
           />
-          <span>
+          <span className="separator-or">
             OR
           </span>
           <Link
