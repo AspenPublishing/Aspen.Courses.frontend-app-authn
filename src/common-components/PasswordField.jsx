@@ -98,6 +98,10 @@ const PasswordField = (props) => {
     />
   );
 
+  const ShowPasswordLink = (
+    <span onClick={setHiddenFalse}>Show</span>
+  );
+
   const placement = window.innerWidth < 768 ? 'top' : 'left';
   const tooltip = (
     <Tooltip id={`password-requirement-${placement}`}>
@@ -131,7 +135,7 @@ const PasswordField = (props) => {
           onBlur={handleBlur}
           onChange={props.handleChange}
           controlClassName={props.borderClass}
-          trailingElement={isPasswordHidden ? ShowButton : HideButton}
+          trailingElement={isPasswordHidden ? ShowPasswordLink : HideButton}
           floatingLabel={props.floatingLabel}
         />
       </OverlayTrigger>
