@@ -6,42 +6,38 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="footer" aria-labelledby="footer-heading">
+    <footer className="relative w-full bg-181818 py-8" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">Footer</h2>
-      <div className="footer-container">
-        <div className="footer-logo">
-          <img src={getConfig().LOGO_URL} alt="Aspen Publishing Logo" className="footer-logo-img" />
+      <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start py-8 px-6 lg:px-0">
+        <div className="flex flex-col mb-8 lg:mb-0">
+          <img src={getConfig().LOGO_URL} alt="Aspen Publishing Logo" className="w-40 h-auto mb-4" />
         </div>
 
-        <div className="footer-links">
-          <div className="footer-links-group">
-            <h3 className="footer-link-title">
-              <a href="https://aspenpublishing.com/pages/discover-jd-next-program" target="_blank" rel="noopener" aria-label="About Us">
-                About Us
-              </a>
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
+          <div className="flex flex-col gap-4 text-white">
+            <h3 className="uppercase text-lg font-medium">
+              <a href="https://aspenpublishing.com/pages/discover-jd-next-program" target="_blank" rel="noopener" aria-label="About Us">About Us</a>
             </h3>
-            <h3 className="footer-link-title">
-              <a href="https://support.aspenpublishing.com/hc/en-us/categories/19204583377428-JD-Next" target="_blank" rel="noopener" aria-label="Support">
-                Support
-              </a>
+            <h3 className="uppercase text-lg font-medium">
+              <a href="https://support.aspenpublishing.com/hc/en-us/categories/19204583377428-JD-Next" target="_blank" rel="noopener" aria-label="Support">Support</a>
             </h3>
           </div>
-          <div className="footer-links-list">
-            <a href="/tos" className="footer-link" aria-label="Terms of Service">Terms of Service</a>
-            <a href="/privacy" className="footer-link" aria-label="Privacy Policy">Privacy Policy</a>
-            <a href="/disclosure" className="footer-link" aria-label="California Consumer Act Policy">California Consumer Act Policy</a>
-            <a href="/agreement" className="footer-link" aria-label="End User License Agreement">End User License Agreement</a>
+          <div className="flex flex-col gap-4 text-gray-300">
+            <a href="/tos" className="text-sm">Terms of Service</a>
+            <a href="/privacy" className="text-sm">Privacy Policy</a>
+            <a href="/disclosure" className="text-sm">California Consumer Act Policy</a>
+            <a href="/agreement" className="text-sm">End User License Agreement</a>
           </div>
         </div>
       </div>
-      <hr className="footer-divider" aria-hidden="true" />
-      <div className="footer-bottom">
-        <span className="footer-copyright">&copy; {currentYear} ASPEN PUBLISHING</span>
-        <div className="footer-social-links">
-          <a href="https://www.facebook.com/profile.php?id=61555997104704" className="footer-social-link" aria-label="Aspen Publishing on Facebook">Facebook</a>
-          <a href="https://www.linkedin.com/company/aspenpublishing/" className="footer-social-link" aria-label="Aspen Publishing on LinkedIn">LinkedIn</a>
-          <a href="https://twitter.com/AspenPublishing" className="footer-social-link" aria-label="Aspen Publishing on Twitter">Twitter</a>
-          <a href="https://www.youtube.com/@aspenpublishing6830" className="footer-social-link" aria-label="Aspen Publishing on YouTube">YouTube</a>
+      <hr className="my-8 border-t border-d6ae75 mx-6 lg:mx-24" aria-hidden="true" />
+      <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center px-6 lg:px-0 py-8">
+        <span className="text-gray-300 text-sm mb-4 lg:mb-0">&copy; {currentYear} ASPEN PUBLISHING</span>
+        <div className="flex gap-4 lg:gap-8">
+          <a href="https://www.facebook.com/profile.php?id=61555997104704" className="text-gray-300 text-sm">Facebook</a>
+          <a href="https://www.linkedin.com/company/aspenpublishing/" className="text-gray-300 text-sm">LinkedIn</a>
+          <a href="https://twitter.com/AspenPublishing" className="text-gray-300 text-sm">Twitter</a>
+          <a href="https://www.youtube.com/@aspenpublishing6830" className="text-gray-300 text-sm">YouTube</a>
         </div>
       </div>
     </footer>
