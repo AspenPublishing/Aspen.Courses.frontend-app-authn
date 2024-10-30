@@ -131,6 +131,9 @@ const Logistration = (props) => {
                   <LoginPage institutionLogin={institutionLogin} handleInstitutionLogin={handleInstitutionLogin} />
                 </div>
               </div>
+              <div>
+                <p>Having trouble? <a href="#">Contact us</a></p>
+              </div>
             </>
           )
           : (
