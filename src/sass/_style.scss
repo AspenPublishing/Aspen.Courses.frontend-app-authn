@@ -41,8 +41,33 @@ $elevation-level-2-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
 
 .main-content {
   @extend .pt-4;
-  min-width: 464px !important;
-  margin-bottom: 150px;
+  width: 642px;
+  min-height: 32rem;
+  background-color: #FFF;
+  border: 1px solid #EFF0F7;
+  position: relative;
+  padding-left: 25px;
+  // Inner content centering
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  // Responsive styles
+  @media (max-width: 767px) {
+    width: 100%;
+    min-width: 320px;
+    margin: 0;
+    border: none;
+  }
+
+  .corner-vector {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 69px;
+    height: 69px;
+    pointer-events: none;
+  }
 }
 
 .welcome-page-content {
@@ -463,4 +488,11 @@ select.form-control {
   box-shadow: 0px 2px 16px 0px #0000002E;
   max-width: 100%;
   height: 100px;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
 }
