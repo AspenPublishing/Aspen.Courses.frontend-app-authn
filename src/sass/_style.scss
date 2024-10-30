@@ -55,9 +55,33 @@ $elevation-level-2-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
   // Responsive styles
   @media (max-width: 767px) {
     width: 100%;
-    min-width: 320px;
-    margin: 0;
-    border: none;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  // Center OR section
+  .separator-text {
+    text-align: center;
+    position: relative;
+    margin: 1.5rem 0;
+    
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: calc(50% - 2rem);
+      height: 1px;
+      background-color: #E0E1E4;
+    }
+
+    &:before {
+      left: 0;
+    }
+
+    &:after {
+      right: 0;
+    }
   }
 
   .corner-vector {
@@ -67,11 +91,8 @@ $elevation-level-2-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
     width: 69px;
     height: 69px;
     pointer-events: none;
+    z-index: 1;
   }
-}
-
-.main-content h3 {
-  font-size: 1.975rem;
 }
 
 .welcome-page-content {
