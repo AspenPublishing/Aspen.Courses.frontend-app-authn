@@ -71,12 +71,12 @@ const messages = defineMessages({
   },
   'email.validation.message': {
     id: 'email.validation.message',
-    defaultMessage: 'Enter your username or email',
+    defaultMessage: 'Please enter your email',
     description: 'Validation message that appears when email is empty',
   },
   'password.validation.message': {
     id: 'password.validation.message',
-    defaultMessage: 'Enter your password',
+    defaultMessage: 'Please enter your password',
     description: 'Validation message that appears when password is empty',
   },
   // Account Activation Strings
