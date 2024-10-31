@@ -559,6 +559,12 @@ select.form-control {
 }
 
 .btn-login:hover {
+  transform: scale(1.02);
+  background-color: #FAA422;
+  border-color: #FAA422;
+}
+
+.btn-login:active {
   background-color: #faa422df;
   border-color: #faa422df;
 }

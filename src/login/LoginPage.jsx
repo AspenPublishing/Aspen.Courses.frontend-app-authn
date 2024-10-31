@@ -262,6 +262,10 @@ const LoginPage = (props) => {
             type="submit"
             variant="brand"
             className="btn-login"
+            style={{
+              backgroundColor: '#FAA422',
+              borderColor: '#FAA422',
+            }}
             state={submitState}
             labels={{
               default: formatMessage(messages['sign.in.button']),
