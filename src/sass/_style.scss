@@ -581,6 +581,11 @@ select.form-control {
   margin-bottom: 55px;
 }
 
+.btn-register:hover {
+  transform: scale(1.02);
+  text-decoration: none !important;
+}
+
 .contact-us-wrapper {
   display: flex;
   justify-content: center;
