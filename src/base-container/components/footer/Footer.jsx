@@ -10,7 +10,7 @@ const Footer = () => {
       <h2 id="footer-heading" className="sr-only">Footer</h2>
       <div className="mx-auto flex flex-col lg:flex-row justify-between items-start py-8 px-6 lg:px-0 container-xl">
         <div className="flex flex-col mb-8 lg:mb-0">
-          <img src={getConfig().LOGO_URL} alt="Aspen Publishing Logo" className="w-40 h-auto mb-4" />
+          <img src={getConfig().LOGO_WHITE_URL} alt="Aspen Publishing Logo" className="w-40 h-auto mb-4" />
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">

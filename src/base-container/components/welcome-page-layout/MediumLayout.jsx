@@ -18,7 +18,7 @@ const MediumLayout = ({ fullName }) => {
         <div className="">
           <div className="header-logo">
             <a href={getConfig().MARKETING_SITE_BASE_URL} className="header-logo-link" aria-label="Aspen Publishing Homepage">
-              <img src={getConfig().LOGO_WHITE_URL} alt={getConfig().SITE_NAME} className="header-logo-img" />
+              <img src={getConfig().LOGO_URL} alt={getConfig().SITE_NAME} className="header-logo-img" />
             </a>
           </div>
           </div>
