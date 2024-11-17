@@ -23,10 +23,10 @@ const Footer = () => {
             </h3>
           </div>
           <div className="flex flex-col gap-4 text-gray-300">
-            <a href="/tos" className="footer-link-extra">Terms of Service</a>
-            <a href="/privacy" className="footer-link-extra">Privacy Policy</a>
-            <a href="/disclosure" className="footer-link-extra">California Consumer Act Policy</a>
-            <a href="/agreement" className="footer-link-extra">End User License Agreement</a>
+          <a href={`${getConfig().LMS_BASE_URL}/tos`} className="footer-link-extra">Terms of Service</a>
+            <a href={`${getConfig().LMS_BASE_URL}/privacy`} className="footer-link-extra">Privacy Policy</a>
+            <a href={`${getConfig().LMS_BASE_URL}/disclosure`} className="footer-link-extra">California Consumer Act Policy</a>
+            <a href={`${getConfig().LMS_BASE_URL}/agreement`} className="footer-link-extra">End User License Agreement</a>
           </div>
         </div>
       </div>
