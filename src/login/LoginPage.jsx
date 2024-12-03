@@ -265,6 +265,7 @@ const LoginPage = (props) => {
             style={{
               backgroundColor: '#FAA422',
               borderColor: '#FAA422',
+              color: '#110906',
             }}
             state={submitState}
             labels={{
