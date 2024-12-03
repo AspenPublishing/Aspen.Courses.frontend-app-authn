@@ -23,7 +23,7 @@ const Footer = () => {
             </h3>
           </div>
           <div className="flex flex-col gap-4 text-gray-300">
-          <a href={`${getConfig().LMS_BASE_URL}/tos`} className="footer-link-extra">Terms of Service</a>
+            <a href={`${getConfig().LMS_BASE_URL}/tos`} className="footer-link-extra">Terms of Service</a>
             <a href={`${getConfig().LMS_BASE_URL}/privacy`} className="footer-link-extra">Privacy Policy</a>
             <a href={`${getConfig().LMS_BASE_URL}/disclosure`} className="footer-link-extra">California Consumer Act Policy</a>
             <a href={`${getConfig().LMS_BASE_URL}/agreement`} className="footer-link-extra">End User License Agreement</a>
@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="my-8 border-t border-d6ae75 mx-6 lg:mx-24 container-xl mx-auto" aria-hidden="true" />
-      <div className="mx-auto flex flex-col lg:flex-row justify-between items-center px-6 lg:px-0 py-8 container-xl">
+      <div className="mx-auto flex flex-col lg:flex-row justify-between lg:items-center px-6 lg:px-0 py-8 container-xl">
         <span className="text-gray-300 text-sm mb-4 lg:mb-0">&copy; {currentYear} ASPEN PUBLISHING</span>
         <div className="flex gap-4 lg:gap-8">
           <a href="https://www.facebook.com/profile.php?id=61555997104704" className="text-gray-300 text-sm">Facebook</a>
