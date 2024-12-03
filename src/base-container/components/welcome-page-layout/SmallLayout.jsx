@@ -12,7 +12,7 @@ const SmallLayout = ({ fullName }) => {
   const { formatMessage } = useIntl();
 
   return (
-    <header className="container mx-auto items-start py-8 px-6 lg:px-0 header-container" role="banner" aria-labelledby="header-heading">
+    <header className="mx-auto flex flex-col lg:flex-row justify-between items-start py-8 px-6 lg:px-0 container-xl" role="banner" aria-labelledby="header-heading">
       <h2 id="header-heading" className="sr-only">Aspen Publishing Header</h2>
       <div className="">
         <div className="header-logo">
