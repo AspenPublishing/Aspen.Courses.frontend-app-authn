@@ -1,7 +1,7 @@
 /* Utility classes */
 .relative { position: relative; }
 .w-full { width: 100%; }
-.bg-181818 { background-color: #181818; }
+.bg-181818 { background-color: #154652; }
 .py-8 { padding-top: 2rem; padding-bottom: 2rem; }
 .container {
   width: 100%;
@@ -17,7 +17,7 @@
 .items-center { align-items: center; }
 .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
 .mb-8 { margin-bottom: 2rem; }
-.w-40 { width: 10rem; }
+.w-40 { width: 15rem; }
 .h-auto { height: auto; }
 .mb-4 { margin-bottom: 1rem; }
 .gap-8 { gap: 2rem; }
@@ -26,11 +26,11 @@
 .uppercase { text-transform: uppercase; }
 .text-lg { font-size: 1.125rem; }
 .font-medium { font-weight: 500; }
-.text-gray-300 { color: #D1D5DB; }
+.text-gray-300 { color: #efefef; }
 .text-sm { font-size: 0.875rem; }
 .my-8 { margin-top: 2rem; margin-bottom: 2rem; }
 .border-t { border-top-width: 1px; }
-.border-d6ae75 { border-color: #D6AE75; }
+.border-d6ae75 { border-color: #f0f6f7; }
 .mx-6 { margin-left: 1.5rem; margin-right: 1.5rem; }
 
 /* Screen reader only */
