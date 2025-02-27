@@ -263,9 +263,9 @@ const LoginPage = (props) => {
             variant="brand"
             className="btn-login"
             style={{
-              backgroundColor: '#FAA422',
-              borderColor: '#FAA422',
-              color: '#110906',
+              backgroundColor: '#BF2D2E',
+              borderColor: '#BF2D2E',
+              color: '#FFFFFF',
             }}
             state={submitState}
             labels={{
